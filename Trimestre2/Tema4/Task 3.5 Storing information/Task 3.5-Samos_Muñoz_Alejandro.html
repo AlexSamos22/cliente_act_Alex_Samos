@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Task 3.5-Samos_Muñoz_Alejandro.js" defer></script>
+    <style>
+        .oculto {
+            display: none;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="registro" class="oculto">
+        <h1>Resgitro</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+            <label for="">Edad</label>
+            <input type="number" placeholder="Edad" id="edad" min="1" required>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+                <option value="O">Otro</option>
+            </select>
+            <label for="color">Elija su color preferido</label>
+            <select name="colores" id="color">
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="naranja">Naranja</option>
+                <option value="verde">Verde</option>
+                <option value="" selected></option>
+            </select>
+            <label for="idioma">¿Que idioma prefiere?</label>
+            <select name="idioma" id="idioma">
+                <option value="ingles">Ingles</option>
+                <option value="español">Español</option>
+                <option value="aleman">Aleman</option>
+                <option value="" selected></option>
+            </select>
+            <button id="registrarse">Registrarse</button>
+        </form>
+        <button id="mostrar_login">Tiene una cuenta? Inicie Sesion</button>
+    </section>
+
+    <section id="login">
+        <h1>Login</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre2" required>
+            <label for="">Edad</label>
+            <input type="number" placeholder="Edad" id="edad2" min="1" required>
+            <label for="recordar_sesion">Recordar sesión</label>
+            <input type="checkbox" id="recordar_sesion" name="recordar_sesion">
+            <button id="login_boton">Iniciar sesion</button>
+        </form>
+        <button id="mostrar_registro">No tiene una cuenta? Registrese</button>
+    </section>
+
+    <section id="eliminar_cuenta" class="oculto">
+        <h1>Eliminar Cuenta</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre3" required>
+            <button id="eliminar">Eliminar</button>
+        </form>
+    </section>
+
+    <section id="configuracion" class="oculto">
+        <h1>Cambiar configuracion</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id="Nombre" required>
+            <label for="">Edad</label>
+            <input type="number" placeholder="Edad" id="Edad" min="1" required>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="Sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+                <option value="O">Otro</option>
+            </select>
+            <label for="color">Elija su color preferido</label>
+            <select name="colores" id="Color">
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="naranja">Naranja</option>
+                <option value="verde">Verde</option>
+                <option value="" selected></option>
+            </select>
+            <label for="idioma">¿Que idioma prefiere?</label>
+            <select name="idioma" id="Idioma">
+                <option value="ingles">Ingles</option>
+                <option value="español">Español</option>
+                <option value="aleman">Aleman</option>
+                <option value="" selected></option>
+            </select>
+            <button id="cambiar">Hacer cambios</button>
+        </form>
+    </section>
+
+    <section id="inicio" class="oculto">
+        <h1 id="bienvenida"></h1>
+        <button id="cerrar_sesion">Cerrar sesion</button>
+        <button id="eliminar_boton">Eliminar cuenta</button>
+        <button id="cambiar_conf">Cambiar configuracion</button>
+    </section>
+
+
+</body>
+
+</html>

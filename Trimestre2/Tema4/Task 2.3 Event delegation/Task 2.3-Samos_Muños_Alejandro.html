@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Task 2.3-Samos_Muños_Alejandro.js" defer></script>
+    <style>
+        .seleccionada{
+            background-color: lightseagreen;
+        }
+
+        .subir{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: none;
+        }
+
+        .mostrar_boton {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Create a unordered shopping list with three levels that collapse when pressing the parent node. 
+        Use only one event handler. Clue: use hidden attribute-->
+    <ul id="lista_compra">
+        <li>Frutas
+            <ul>
+                <li>Manzanas
+                    <ul>
+                        <li>Manzanas rojas</li>
+                        <li>Manzanas verdes</li>
+                    </ul>
+                </li>
+                <li>Naranjas
+                    <ul>
+                        <li>Naranja dulce</li>
+                        <li>Naranja Valenciana</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Verduras
+            <ul>
+                <li>Zanohoria
+                    <ul>
+                        <li>Zanohoria Amarilla</li>
+                        <li>Zanohoria Blanca</li>
+                    </ul>
+                </li>
+                <li>Lechuga
+                    <ul>
+                        <li>Lechuga Romana</li>
+                        <li>Lechuga Rosso</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <section class="caja" style="border: 1px solid black; background-color: lightgreen;">
+        <section class="caja-header">Caja 1</section>
+        <section class="caja-texto">
+            <p>Caja 1 parrafo</p>
+        </section>
+        <button class="boton-cierre">Cerrar caja 1</button>
+    </section>
+
+    <section class="caja" style="border: 1px solid black; background-color: lightcoral;">
+        <section class="caja-header">Caja 2</section>
+        <section class="caja-texto">
+            <p>Caja 2 parrrafo</p>
+        </section>
+        <button class="boton-cierre">Cerrar caja 2</button>
+    </section>
+
+    <section class="caja" style="border: 1px solid black; background-color: lightskyblue;">
+        <section class="caja-header">Caja 3</section>
+        <section class="caja-texto">
+            <p>Caja 3 parrafo</p>
+        </section>
+        <button class="boton-cierre">Cerrar caja 3</button>
+    </section>
+
+    <button class="mostrar-cajas">Volver a mostrar las cajas</button>
+    <br>
+    <br>
+    <br>
+    <section id="ejer3">
+        <button id="boton-con-info"
+            data-info="Este boton saca este texto y lo añade a un contenedor para mostrarlo">Boton que muestra una
+            informacion</button>
+        <section id="contenedor-info"></section>
+    </section>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th data-type="number">Numeros</th>
+                <th data-type="text">Texto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>Tres</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dos</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Uno</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Quatro</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <ul id="lista_compra_ejer5">
+        <li>Frutas
+            <ul>
+                <li>Manzanas
+                    <ul>
+                        <li>Manzanas rojas</li>
+                        <li>Manzanas verdes</li>
+                    </ul>
+                </li>
+                <li>Naranjas
+                    <ul>
+                        <li>Naranja dulce</li>
+                        <li>Naranja Valenciana</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Verduras
+            <ul>
+                <li>Zanohoria
+                    <ul>
+                        <li>Zanohoria Amarilla</li>
+                        <li>Zanohoria Blanca</li>
+                    </ul>
+                </li>
+                <li>Lechuga
+                    <ul>
+                        <li>Lechuga Romana</li>
+                        <li>Lechuga Rosso</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <button id="subir_pagina" class="subir">Volver al principio de la pagina</button>
+</body>
+
+</html>

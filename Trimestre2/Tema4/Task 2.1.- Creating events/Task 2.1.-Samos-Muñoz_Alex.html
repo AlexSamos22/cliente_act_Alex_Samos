@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2.1.- Creating events</title>
+    <script src="Task 2.1.-Samos-Muñoz_Alex.js" defer></script>
+    <link rel="stylesheet" href="Task 2.1.-Samos-Muñoz_Alex.css">
+</head>
+<body>
+    <button id="boton_ocultar">Boton que se oculta</button>
+    <button id="quitar_evento">Eliminar el evento de ocultar boton</button>
+
+    <section id="grupo_botones">
+        <article>
+           <button data-action="mostrar_ocultar">Mostrar/Ocultar texto</button> 
+           <p class="parrafo_oculto" id="oculto">Este parrafo se muestra y oculta pulsando en el boton</p>
+        </article>
+        
+        <button data-action="ventana">Mostrar ventana</button>
+        <button data-action="console_text">Sacar texto por consola</button>
+    </section>
+
+    <article  id="caja_ocultar" style="border: 1px solid black;">
+        <header>
+            <h1>Caja que se oculta</h1>
+        </header>
+        <p>Texto de la caja</p>
+    </article>
+    <button id="ocultar_caja">Mostrar/Ocultar la caja</button>
+</body>
+</html>
